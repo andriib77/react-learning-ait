@@ -1,4 +1,6 @@
-function ProfileCard({}) {    
+import "./styles.css";
+
+function ProfileCard() {    
   const user = {
     name: "Chris",
     lastName: "Hemsworth",
