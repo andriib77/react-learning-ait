@@ -3,36 +3,3 @@
   flex: 1;
   flex-direction: column;
 }
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  /* width: 200px; */
-}
-
-.user-card {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-  height: fit-content;
-  border: 1px solid black;
-  padding: 30px;
-  margin: 20px;
-}
-
-.avatar {
-  width: 250px;
-  padding-bottom: 20px;
-}
-
-.page-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
-}
-
-p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 16px;
-}
