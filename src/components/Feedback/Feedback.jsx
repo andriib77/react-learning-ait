@@ -9,14 +9,13 @@ function Feedback() {
   const [dislike, setDisLike] = useState(0);
 
   const onLike = () => {
-    setLike((prevValue) => {
-      return prevValue + 1;
-    });
+    setLike((prevValue) => prevValue + 1);
   };
 
   const onDislike = () => {
     setDisLike((prevValue) => prevValue + 1);
   };
+
   const reset = () => {
     setLike(0);
     setDisLike(0);
@@ -33,7 +32,7 @@ function Feedback() {
       </div>
       <p className="count">{dislike}</p>
       <div className="button-reset">
-        <Button name="Reset Results" onClick={reset} type="reset" />
+        <Button name="Reset Results" onClick={reset} />
       </div>
     </div>
   );
