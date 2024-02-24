@@ -1,8 +1,10 @@
 import { useState } from "react";
 
-import "./styles.css";
+import { Like } from "../../assets";
+import { Dislike } from "../../assets/dislike";
 
 import Button from "../Button/Button";
+import "./styles.css";
 
 function Feedback() {
   const [like, setLike] = useState(0);
@@ -24,11 +26,17 @@ function Feedback() {
   return (
     <div className="counter-wrapper">
       <div className="button-control">
-        <Button name="👍" onClick={onLike} />
+        {/* <Button name="👍" onClick={onLike} /> */}
+        <div onClick={onLike} className="image-control">
+          <img className="image" src={Like} alt="Like img" />
+        </div>
       </div>
       <p className="count">{like}</p>
       <div className="button-control">
-        <Button name="👎" onClick={onDislike} />
+        {/* <Button name="👎" onClick={onDislike} /> */}
+        <div onClick={onDislike} className="image-control">
+          <img className="image" src={Dislike} alt="Dislike img" />
+        </div>
       </div>
       <p className="count">{dislike}</p>
       <div className="button-reset">
